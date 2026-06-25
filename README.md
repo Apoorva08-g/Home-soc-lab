@@ -27,8 +27,7 @@ reports to simulate real SOC analyst workflows.
 | SSH Brute Force | Hydra | T1110.001 | [IR-001](reports/IR-001-SSH-Brute-Force.md) |
 | Nmap Reconnaissance | Nmap | T1046 | [IR-002](reports/IR-002-Nmap-Scan.md) |
 | Privilege Escalation | GTFOBins (sudo find) |T1548.003 | [IR-003](reports/IR-003-Privilege-Escalation.md) |
-
-
+| Persistence | useradd | T1136.001 + T1078.003 | [IR-004](reports/IR-003-Persistence-attack.md) |
 ## Custom Detection Rules
 | Rule ID | Description | Detects |
 |---------|-------------|---------|
