@@ -1,6 +1,9 @@
 INCIDENT RESPONSE REPORT 005
+
 Date: 09/07/2026 
+
 Severity: High
+
 Status: Open (system retained in current state for continued lab testing)
 
 Summary: Wazuh detected suspicious activity on ubuntu-victim (192.168.1.27). The attacker, after gaining initial access via SSH as backdoor account netmon1, then used the compromised victim account to clear the contents of /var/log/auth.log to remove evidence of their activity. This was detected by Wazuh's FIM (File Integrity Monitoring) via syscheck, which triggered Rule 592 when the log file size was reduced to zero. Additionally, the attacker cleared their .bash_history file to remove command history, which went undetected representing a detection gap. Notably, Wazuh misclassified the alert as T1565.001 (Stored Data Manipulation) instead of T1070 (Indicator Removal), highlighting a limitation in Wazuh's default MITRE mapping.
